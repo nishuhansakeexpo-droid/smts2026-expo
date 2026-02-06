@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SMTS2026　世界のお酒EXPO　商品詳細</title>
+<style>
+body {
+  background-image: url('背景.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  padding: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  user-select: none;
+  text-decoration: none;
+  color: #111;
+}
+.card:hover {
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.2);
+}
+.icon {
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+.label {
+  font-weight: 700;
+  font-size: 18px;
+}
+.label.eurasia-asia,
+.label.eurasia-europe {
+  font-size: 14px;
+  white-space: normal;
+  line-height: 1.2;
+}
+.company-logo {
+  height: 80px;
+  width: auto;
+  margin-top: 15px;
+  display: inline-block;
+}
+.company-info {
+  text-align: center;
+  margin-top: 40px;
+}
+@media (max-width: 600px) {
+  .icon {
+    font-size: 48px;
+  }
+  .label {
+    font-size: 16px;
+  }
+  .card {
+    padding: 15px;
+  }
+  body {
+    padding: 10px;
+  }
+  .company-logo {
+    height: 40px;
+  }
+}
+</style>
+</head>
+<body>
+<h1>SMTS2026　日酒販ブース　世界のお酒EXPO　商品詳細</h1>
+<div class="container">
+  <a href="africa.html" class="card" aria-label="アフリカ">
+    <div class="icon">🦒</div>
+    <div class="label">アフリカ</div>
+  </a>
+  <a href="oceania.html" class="card" aria-label="オセアニア">
+    <div class="icon">🐨</div>
+    <div class="label">オセアニア</div>
+  </a>
+  <a href="eurasia_asia.html" class="card" aria-label="ユーラシア（アジア）">
+    <div class="icon">🛕</div>
+    <div class="label eurasia-asia">ユーラシア<br>（アジア）</div>
+  </a>
+  <a href="eurasia_europe.html" class="card" aria-label="ユーラシア（ヨーロッパ）">
+    <div class="icon">🏰</div>
+    <div class="label eurasia-europe">ユーラシア<br>（ヨーロッパ）</div>
+  </a>
+  <a href="south_america.html" class="card" aria-label="南アメリカ">
+    <div class="icon">🏜️</div>
+    <div class="label">南アメリカ</div>
+  </a>
+  <a href="north_america.html" class="card" aria-label="北アメリカ">
+    <div class="icon">🗽</div>
+    <div class="label">北アメリカ</div>
+  </a>
+  <a href="all_products.html" class="card" aria-label="全商品リスト">
+    <div class="icon">📋</div>
+    <div class="label">全商品リスト</div>
+  </a>
+  <a href="sales_floor_plan.html" class="card" aria-label="売場展開案">
+    <div class="icon">🛒</div>
+    <div class="label">売場展開案</div>
+  </a>
+</div>
+
+<footer>
+  <div class="company-info">
+    <a href="https://www.nishuhan.co.jp/">
+      <img src="nishuhan.logo.png" alt="日本酒類販売株式会社 ロゴ" class="company-logo" />
+    </a>
+  </div>
+</footer>
+</body>
+</html>
