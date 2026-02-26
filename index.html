@@ -15,6 +15,15 @@ body {
   text-align: center;
   margin: 0;
 }
+.notification {
+  color: red;
+  font-size: 1.5em; /* 文字を大きめに */
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.85); /* 背景を少し白くして読みやすくする */
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
 h1 {
   background-color: rgba(255, 255, 255, 0.8);
   display: inline-block;
@@ -85,10 +94,19 @@ h1 {
   .company-logo {
     height: 40px;
   }
+  .notification {
+    font-size: 1.2em;
+  }
 }
 </style>
 </head>
 <body>
+
+<!-- 追加した文言 -->
+<div class="notification">
+  ご来場頂きありがとうございました。こちらのサイトは2026年3月に閉鎖されます。
+</div>
+
 <h1>SMTS2026　日酒販ブース　世界のお酒EXPO　商品詳細</h1>
 <div class="container">
   <a href="africa.html" class="card" aria-label="アフリカ">
@@ -134,4 +152,3 @@ h1 {
 </footer>
 </body>
 </html>
-
